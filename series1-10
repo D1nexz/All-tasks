@@ -1,0 +1,81 @@
+N = int(input("N: "))
+total_int = 0.0
+for i in range(N):
+    num = float(input(f"Число {i+1}: "))
+    int_part = float(int(num)) # Целая часть как вещественное
+    print(int_part, end=" ")
+    total_int += int_part
+print(f"\nСумма целых частей: {total_int}")
+
+
+N = int(input("N: "))
+total = 0.0
+prod = 1.0
+for i in range(N):
+    num = float(input(f"Число {i+1}: "))
+    total += num
+    prod *= num
+print(f"Сумма: {total}, Произведение: {prod}")
+
+
+total = 0.0
+for i in range(10):
+    total += float(input(f"Число {i+1}: "))
+print(total / 10)
+prod = 1.0
+for i in range(10):
+    prod *= float(input(f"Число {i+1}: "))
+print(prod)
+total = 0.0
+for i in range(10):
+    total += float(input(f"Число {i+1}: "))
+print(total)
+
+
+N = int(input("N: "))
+found = False
+for i in range(N):
+    num = int(input(f"Число {i+1}: "))
+    if num > 0:
+        found = True
+print("TRUE" if found else "FALSE")
+
+
+N = int(input("N: "))
+count = 0
+for i in range(N):
+    num = int(input(f"Число {i+1}: "))
+    if num % 2 != 0:
+        print(i + 1, end=" ") # Номера с 1
+        count += 1
+print(f"\nКоличество нечетных: {count}")
+
+
+N = int(input("N: "))
+count = 0
+for i in range(N):
+    num = int(input(f"Число {i+1}: "))
+    if num % 2 == 0:
+        print(num, end=" ")
+        count += 1
+print(f"\nКоличество четных: {count}")
+
+
+N = int(input("N: "))
+total_rounded = 0
+for i in range(N):
+    num = float(input(f"Число {i+1}: "))
+    rounded = int(num + 0.5) if num >= 0 else int(num - 0.5)
+    print(rounded, end=" ")
+    total_rounded += rounded
+print(f"\nСумма округленных: {total_rounded}")
+
+
+N = int(input("N: "))
+prod_frac = 1.0
+for i in range(N):
+    num = float(input(f"Число {i+1}: "))
+    frac_part = num - int(num) # Дробная часть
+    print(frac_part, end=" ")
+    prod_frac *= frac_part
+print(f"\nПроизведение дробных частей: {prod_frac}")
