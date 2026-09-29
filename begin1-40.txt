@@ -1,0 +1,328 @@
+# begin1
+side_a1 = int(input("Введите число для стороны A: "))
+side_b1 = int(input("Введите число для стороны B: "))
+area1 = side_a1 * side_b1
+perimeter1 = (side_a1 + side_b1) * 2
+print("Площадь:", area1)
+print("Периметр:", perimeter1)
+
+# begin2
+radius1 = int(input("Введите радиус для окружности: "))
+pi_val1 = 3.14
+circumference1 = radius1 * pi_val1
+print("Длина окружности:", circumference1)
+
+# begin3
+radius2 = int(input("Введите радиус для круговой области: "))
+pi_val2 = 3.14
+area_circle2 = radius2 * pi_val2
+print("Площадь круга:", area_circle2)
+
+# begin4
+side_cube1 = int(input("Введите длину стороны куба: "))
+volume_cube1 = side_cube1 ** 3
+surface_area_cube1 = (side_cube1 ** 2) * 6
+print("Объем куба:", volume_cube1)
+print("Площадь поверхности куба:", surface_area_cube1)
+
+# begin5
+length_a1 = int(input("Введите длину A: "))
+length_b1 = int(input("Введите длину B: "))
+length_c1 = int(input("Введите длину C: "))
+volume_box1 = length_a1 * length_b1 * length_c1
+surface_area_box1 = 2 * (length_a1 * length_b1 + length_b1 * length_c1 + length_a1 * length_c1)
+print("Объем прямоугольного параллелепипеда:", volume_box1)
+print("Площадь поверхности:", surface_area_box1)
+
+# begin6
+base1 = int(input("Введите длину основания: "))
+radius3 = int(input("Введите радиус: "))
+length1 = 2 * base1 * radius3
+area1 = base1 * (radius3 ** 2)
+print("Длина:", length1)
+print("Площадь:", area1)
+
+# begin7
+trapezoid_base1 = int(input("Введите длину первой базы: "))
+trapezoid_base2 = int(input("Введите длину второй базы: "))
+avg_base = (trapezoid_base1 + trapezoid_base2) / 2
+print("Средняя база:", avg_base)
+
+# begin8
+side1 = float(input("Введите число для первой стороны: "))
+side2 = float(input("Введите число для второй стороны: "))
+geometric_mean = (side1 * side2) ** 0.5
+print("Геометрическое среднее:", geometric_mean)
+
+# begin9
+side_1a = float(input("Введите число для стороны A: "))
+side_1b = float(input("Введите число для стороны B: "))
+print(side_1a**2 + side_1b**2)
+print(side_1a**2 - side_1b**2)
+print(side_1a**2 * side_1b**2)
+print(side_1a**2 / side_1b**2)
+
+# begin10
+num_a1 = float(input("Введите число A: "))
+num_b1 = float(input("Введите число B: "))
+a_squared1, b_squared1 = num_a1 ** 2, num_b1 ** 2
+print("Сумма квадратов:", a_squared1 + b_squared1)
+print("Разность квадратов:", a_squared1 - b_squared1)
+print("Произведение квадратов:", a_squared1 * b_squared1)
+print("Частное квадратов:", a_squared1 / b_squared1)
+
+# begin11
+num_a2 = float(input("Введите число A: "))
+num_b2 = float(input("Введите число B: "))
+abs_a, abs_b = abs(num_a2), abs(num_b2)
+print("Сумма модулей:", abs_a + abs_b)
+print("Разность модулей:", abs_a - abs_b)
+print("Произведение модулей:", abs_a * abs_b)
+print("Частное модулей:", abs_a / abs_b)
+
+# begin12
+leg_a1 = float(input("Введите первую катет A: "))
+leg_b1 = float(input("Введите вторую катет B: "))
+hypotenuse1 = math.sqrt(leg_a1 ** 2 + leg_b1 ** 2)
+perimeter_triangle1 = leg_a1 + leg_b1 + hypotenuse1
+print("Гипотенуза c:", hypotenuse1)
+print("Периметр P:", perimeter_triangle1)
+
+# begin13
+radius1 = float(input("Введите число для радиуса 1: "))
+radius2 = float(input("Введите число для радиуса 2: "))
+area1_circle = PI * radius1 ** 2
+area2_circle = PI * radius2 ** 2
+area_difference = area1_circle - area2_circle
+print("Площадь S1:", area1_circle)
+print("Площадь S2:", area2_circle)
+print("Разница площадей S3:", area_difference)
+
+# begin14
+length_circumference = float(input("Введите длину окружности: "))
+radius_calculated = length_circumference / (2 * PI)
+area_circumference = PI * radius_calculated ** 2
+print("Радиус R:", radius_calculated)
+print("Площадь S:", area_circumference)
+
+# begin15
+area_input = float(input("Введите площадь: "))
+diameter = 2 * math.sqrt(area_input / PI)
+circumference_length = 2 * PI * (diameter / 2)
+print("Диаметр D:", diameter)
+print("Длина окружности L:", circumference_length)
+
+# begin16
+point_x1 = float(input("Введите координату x1: "))
+point_x2 = float(input("Введите координату x2: "))
+distance = abs(point_x2 - point_x1)
+print("Расстояние:", distance)
+
+# begin17
+point_a = float(input("Введите значение A: "))
+point_b = float(input("Введите значение B: "))
+point_c = float(input("Введите значение C: "))
+ac_distance = abs(point_c - point_a)
+bc_distance = abs(point_c - point_b)
+print("Расстояние AC:", ac_distance)
+print("Расстояние BC:", bc_distance)
+print("Сумма расстояний:", ac_distance + bc_distance)
+
+# begin18
+input_a = float(input("Введите значение A: "))
+input_b = float(input("Введите значение B: "))
+input_c = float(input("Введите значение C: "))
+ac_distance_prod = abs(input_c - input_a)
+bc_distance_prod = abs(input_c - input_b)
+print("Произведение AC * BC:", ac_distance_prod * bc_distance_prod)
+
+# begin19
+coord_x1 = float(input("Введите x1: "))
+coord_y1 = float(input("Введите y1: "))
+coord_x2 = float(input("Введите x2: "))
+coord_y2 = float(input("Введите y2: "))
+width = abs(coord_x2 - coord_x1)
+height = abs(coord_y2 - coord_y1)
+print("Периметр:", 2 * (width + height))
+print("Площадь:", width * height)
+
+# begin20
+def distance_calculation():
+    point1_x = float(input("Введите координату x1: "))
+    point1_y = float(input("Введите координату y1: "))
+    point2_x = float(input("Введите координату x2: "))
+    point2_y = float(input("Введите координату y2: "))
+    distance_result = math.sqrt((point2_x - point1_x) ** 2 + (point2_y - point1_y) ** 2)
+    print("Расстояние:", distance_result)
+
+# begin21
+triangle_x1 = float(input("Введите x1: "))
+triangle_y1 = float(input("Введите y1: "))
+triangle_x2 = float(input("Введите x2: "))
+triangle_y2 = float(input("Введите y2: "))
+triangle_x3 = float(input("Введите x3: "))
+triangle_y3 = float(input("Введите y3: "))
+side_a = math.sqrt((triangle_x3 - triangle_x2) ** 2 + (triangle_y3 - triangle_y2) ** 2)
+side_b = math.sqrt((triangle_x3 - triangle_x1) ** 2 + (triangle_y3 - triangle_y1) ** 2)
+side_c = math.sqrt((triangle_x2 - triangle_x1) ** 2 + (triangle_y2 - triangle_y1) ** 2)
+perimeter_triangle = side_a + side_b + side_c
+half_perimeter = perimeter_triangle / 2
+area_triangle = math.sqrt(half_perimeter * (half_perimeter - side_a) * (half_perimeter - side_b) * (half_perimeter - side_c))
+print("Периметр:", perimeter_triangle)
+print("Площадь:", area_triangle)
+
+# begin22
+first_value = float(input("Введите значение A: "))
+second_value = float(input("Введите значение B: "))
+first_value, second_value = second_value, first_value
+print("A:", first_value)
+print("B:", second_value)
+
+# begin23
+var_a1 = float(input("Введите число для A: "))
+var_b1 = float(input("Введите число для B: "))
+var_c1 = float(input("Введите число для C: "))
+var_a1, var_b1, var_c1 = var_c1, var_a1, var_b1
+print("A:", var_a1)
+print("B:", var_b1)
+print("C:", var_c1)
+
+# begin24
+var_a2 = float(input("Введите число для A: "))
+var_b2 = float(input("Введите число для B: "))
+var_c2 = float(input("Введите число для C: "))
+var_a2, var_b2, var_c2 = var_b2, var_c2, var_a2
+print("A:", var_a2)
+print("B:", var_b2)
+print("C:", var_c2)
+
+# begin25
+var_x1 = float(input("Введите число x: "))
+var_y1 = 3 * var_x1 ** 6 - 6 * var_x1 ** 2 - 7 * var_x1 ** 3 + 2
+print("y:", var_y1)
+
+# begin26
+var_x2 = float(input("Введите число x: "))
+var_t1 = var_x2 - 3
+var_y2 = 4 * var_t1 ** 6 - 7 * var_t1 ** 3 + 2
+print("y:", var_y2)
+
+# begin27
+var_a3 = float(input("Введите число: "))
+var_a2_squared = var_a3 * var_a3
+var_a4_squared = var_a2_squared * var_a2_squared
+var_a8_squared = var_a4_squared * var_a4_squared
+print("A^2:", var_a2_squared)
+print("A^4:", var_a4_squared)
+print("A^8:", var_a8_squared)
+
+# begin28
+var_a4 = float(input("Введите число: "))
+var_a2_square = var_a4 * var_a4
+var_a3_square = var_a2_square * var_a4
+var_a5_square = var_a3_square * var_a2_square
+var_a10_square = var_a5_square * var_a5_square
+var_a15_square = var_a10_square * var_a5_square
+print("A^2:", var_a2_square)
+print("A^3:", var_a3_square)
+print("A^5:", var_a5_square)
+print("A^10:", var_a10_square)
+print("A^15:", var_a15_square)
+
+# begin29
+var_alpha_deg = float(input("Введите угол в градусах: "))
+var_alpha_rad = var_alpha_deg * PI / 180
+print("Угол в радианах:", var_alpha_rad)
+
+# begin30
+var_alpha_rad_input = float(input("Введите угол в радианах: "))
+var_alpha_deg_output = var_alpha_rad_input * 180 / PI
+print("Угол в градусах:", var_alpha_deg_output)
+
+# begin31
+var_temp_f = float(input("Введите температуру в Фаренгейтах: "))
+var_temp_c = (var_temp_f - 32) * 5 / 9
+print("Температура в градусах Цельсия:", var_temp_c)
+
+# begin32
+var_temp_c_input = float(input("Введите температуру в Цельсиях: "))
+var_temp_f_output = var_temp_c_input * 9 / 5 + 32
+print("Температура в градусах Фаренгейта:", var_temp_f_output)
+
+# begin33
+var_weight_x = float(input("Введите вес X (кг): "))
+var_cost_a = float(input("Введите стоимость A (руб.): "))
+var_weight_y = float(input("Введите вес Y (кг): "))
+var_price_per_kg = var_cost_a / var_weight_x
+var_price_y = var_price_per_kg * var_weight_y
+print("Цена 1 кг:", var_price_per_kg)
+print("Цена Y кг:", var_price_y)
+
+# begin34
+var_weight_x_choc = float(input("Введите вес шоколадных конфет (кг): "))
+var_cost_a_choc = float(input("Введите стоимость шоколадных конфет (руб.): "))
+var_weight_y_iris = float(input("Введите вес ирисок (кг): "))
+var_cost_b_iris = float(input("Введите стоимость ирисок (руб.): "))
+var_price_choc_per_kg = var_cost_a_choc / var_weight_x_choc
+var_price_iris_per_kg = var_cost_b_iris / var_weight_y_iris
+var_ratio = var_price_choc_per_kg / var_price_iris_per_kg
+print("Цена 1 кг")
+
+# begin35
+velocity = float(input("Введите скорость (v): "))
+deceleration = float(input("Введите замедление (u): "))
+time_first = float(input("Введите время 1 (t1): "))
+time_second = float(input("Введите время 2 (t2): "))
+distance = time_first * velocity + time_second * (velocity - deceleration)
+print("Путь S:", distance)
+
+# begin36
+velocity1 = float(input("Введите скорость 1 (v1): "))
+velocity2 = float(input("Введите скорость 2 (v2): "))
+initial_distance = float(input("Введите начальное расстояние (s): "))
+time_duration = float(input("Введите время (t): "))
+result_distance = initial_distance + time_duration * (velocity1 + velocity2)
+print("Расстояние через T часов:", result_distance)
+
+# begin37
+velocity1_second = float(input("Введите скорость 1 (v1): "))
+velocity2_second = float(input("Введите скорость 2 (v2): "))
+initial_distance_second = float(input("Введите начальное расстояние (s): "))
+time_duration_second = float(input("Введите время (t): "))
+result_distance_second = abs(initial_distance_second - time_duration_second * (velocity1_second + velocity2_second))
+print("Расстояние через T часов:", result_distance_second)
+
+# begin38
+coefficient_a = float(input("Введите число A: "))
+coefficient_b = float(input("Введите число B: "))
+root_x = -coefficient_b / coefficient_a
+print("Корень x:", root_x)
+
+# begin39
+coefficient_a_quadratic = float(input("Введите число A: "))
+coefficient_b_quadratic = float(input("Введите число B: "))
+coefficient_c_quadratic = float(input("Введите число C: "))
+discriminant = coefficient_b_quadratic ** 2 - 4 * coefficient_a_quadratic * coefficient_c_quadratic
+
+# Проверка на наличие действительных корней
+if discriminant < 0:
+    print("Корней нет.")
+else:
+    sqrt_d = math.sqrt(discriminant)
+    root_x1 = (-coefficient_b_quadratic - sqrt_d) / (2 * coefficient_a_quadratic)
+    root_x2 = (-coefficient_b_quadratic + sqrt_d) / (2 * coefficient_a_quadratic)
+    print("Меньший корень:", min(root_x1, root_x2))
+    print("Больший корень:", max(root_x1, root_x2))
+
+# begin40
+a1_system = float(input("Введите число A1: "))
+b1_system = float(input("Введите число B1: "))
+c1_system = float(input("Введите число C1: "))
+a2_system = float(input("Введите число A2: "))
+b2_system = float(input("Введите число B2: "))
+c2_system = float(input("Введите число C2: "))
+determinant = a1_system * b2_system - a2_system * b1_system
+x_solution = (c1_system * b2_system - c2_system * b1_system) / determinant
+y_solution = (a1_system * c2_system - a2_system * c1_system) / determinant
+print("x:", x_solution)
+print("y:", y_solution)
