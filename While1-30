@@ -1,0 +1,272 @@
+N = int(input("N: "))
+K = 0
+while N > 1:
+    N //= 2
+    K += 1
+print(K)
+
+
+N = int(input("N: "))
+while N > 1 and N % 3 == 0:
+    N //= 3
+if N == 1:
+    print("TRUE")
+else:
+    print("FALSE")
+
+
+N = int(input("N: "))
+K = int(input("K: "))
+quotient = 0
+while N >= K:
+    N -= K
+    quotient += 1
+print(f"Частное: {quotient}, Остаток: {N}")
+
+
+A = int(input("A: "))
+B = int(input("B: "))
+count = 0
+while A >= B:
+    A -= B
+    count += 1
+print(count)
+
+
+A = int(input("A: "))
+B = int(input("B: "))
+while A >= B:
+    A -= B
+print(A)
+
+
+A = int(input("A: "))
+B = int(input("B: "))
+C = int(input("C: "))
+count = 0
+width_count = 0
+temp_A = A
+while temp_A >= C:
+    temp_A -= C
+    width_count += 1
+height_count = 0
+temp_B = B
+while temp_B >= C:
+    temp_B -= C
+    height_count += 1
+for _ in range(height_count):
+    count += width_count
+print(count)
+
+
+eps = float(input("eps: "))
+A1, A2 = 1.0, 2.0
+K = 3
+A3 = (A1 + 2 * A2) / 3
+while abs(A3 - A2) >= eps:
+    A1, A2 = A2, A3
+    A3 = (A1 + 2 * A2) / 3
+    K += 1
+print(f"K = {K}, A_{{K-1}} = {A2}, A_K = {A3}")
+eps = float(input("eps: "))
+
+
+A_prev = 2.0
+K = 2
+A_curr = 2 + 1 / A_prev
+while abs(A_curr - A_prev) >= eps:
+    A_prev = A_curr
+    A_curr = 2 + 1 / A_prev
+    K += 1
+print(f"K = {K}, A_{{K-1}} = {A_prev}, A_K = {A_curr}")
+
+
+N = int(input("N (>1): "))
+F1, F2 = 1, 1
+K = 2
+while F2 < N:
+    F1, F2 = F2, F1 + F2
+    K += 1
+print(K)
+
+
+N = int(input("N (>1): "))
+F1, F2 = 1, 1
+while F2 < N:
+    F1, F2 = F2, F1 + F2
+next_fib = F1 + F2
+print(f"Предыдущее: {F1}, Следующее: {next_fib}")
+
+
+N = int(input("N (>1): "))
+F1, F2 = 1, 1
+while F2 <= N:
+    F1, F2 = F2, F1 + F2
+print(F2)
+
+
+N = int(input("N (>1): "))
+F1, F2 = 1, 1
+while F2 < N:
+    F1, F2 = F2, F1 + F2
+print("TRUE" if F2 == N else "FALSE")
+
+
+A = int(input("A: "))
+B = int(input("B: "))
+while B != 0:
+    A, B = B, A % B
+print(A)
+
+
+N = int(input("N (>1): "))
+is_prime = True
+divisor = 2
+while divisor * divisor <= N:
+    if N % divisor == 0:
+        is_prime = False
+        break
+    divisor += 1
+print("TRUE" if is_prime else "FALSE")
+
+
+N = int(input("N: "))
+found = False
+while N > 0:
+    if (N % 10) % 2 != 0:
+        found = True
+        break
+    N //= 10
+print("TRUE" if found else "FALSE")
+
+
+N = int(input("N: "))
+found = False
+while N > 0:
+    if N % 10 == 2:
+        found = True
+        break
+    N //= 10
+print("TRUE" if found else "FALSE")
+
+
+N = int(input("N: "))
+reversed_num = 0
+while N > 0:
+    reversed_num = reversed_num * 10 + (N % 10)
+    N //= 10
+print(reversed_num)
+
+
+N = int(input("N: "))
+count = 0
+total = 0
+while N > 0:
+    digit = N % 10
+    total += digit
+    count += 1
+    N //= 10
+print(f"Количество: {count}, Сумма: {total}")
+
+
+N = int(input("N: "))
+while N > 0:
+    print(N % 10, end=" ")
+    N //= 10
+print()
+
+
+P = float(input("P (0<P<50): "))
+daily = 10.0
+total = 0.0
+K = 0
+while total <= 200:
+    total += daily
+    daily *= (1 + P / 100)
+    K += 1
+print(f"Дней: {K}, Суммарный пробег: {total:.2f}")
+
+
+P = float(input("P (0<P<25): "))
+S = 1000.0
+K = 0
+while S <= 1100:
+    S *= (1 + P / 100)
+    K += 1
+print(f"Месяцев: {K}, Итог: {S:.2f}")
+
+
+A = float(input("A: "))
+K = 0
+total = 0.0
+while total + 1.0 / (K + 1) < A:
+    K += 1
+    total += 1.0 / K
+print(f"K = {K}, Сумма = {total}")
+
+
+A = float(input("A: "))
+K = 0
+total = 0.0
+while total <= A:
+    K += 1
+    total += 1.0 / K
+print(f"K = {K}, Сумма = {total}")
+
+
+N = int(input("N: "))
+K = 0
+total = 0
+while total + (K + 1) <= N:
+    K += 1
+    total += K
+print(f"K = {K}, Сумма = {total}")
+
+
+N = int(input("N: "))
+K = 0
+total = 0
+while total < N:
+    K += 1
+    total += K
+print(f"K = {K}, Сумма = {total}")
+
+
+N = int(input("N: "))
+K = 0
+power = 1
+while power * 3 < N:
+    power *= 3
+    K += 1
+print(K)
+
+
+N = int(input("N: "))
+K = 1
+power = 3
+while power <= N:
+    power *= 3
+    K += 1
+print(K)
+
+
+N = int(input("N: "))
+K = 1
+while (K + 1) * (K + 1) <= N:
+    K += 1
+print(K)
+
+
+N = int(input("N: "))
+K = 1
+while K * K <= N:
+    K += 1
+print(K)
+
+
+N = int(input("N: "))
+result = 1.0
+while N > 0:
+    result *= N
+    N -= 2
+print(result)
